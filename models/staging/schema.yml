@@ -1,0 +1,75 @@
+
+version: 2
+
+models:
+    - name: stg_africa
+      description: "A dbt model for Carmen Sandiego sightings in Africa"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_america
+      description: "A dbt model for Carmen Sandiego sightings in the Americas"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_asia
+      description: "A dbt model for Carmen Sandiego sightings in Asia"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_atlantic
+      description: "A dbt model for Carmen Sandiego sightings in the Atlantic"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_australia
+      description: "A dbt model for Carmen Sandiego sightings in Australia"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_europe
+      description: "A dbt model for Carmen Sandiego sightings in Europe"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_indian
+      description: "A dbt model for Carmen Sandiego sightings in India"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_pacific
+      description: "A dbt model for Carmen Sandiego sightings in the Pacific"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
