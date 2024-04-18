@@ -1,3 +1,5 @@
+{{ config(materialized="view") }}
+
 WITH regions_ranked AS (
     SELECT 
         month_witnessed,

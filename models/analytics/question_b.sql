@@ -1,3 +1,5 @@
+{{ config(materialized="view") }}
+
 SELECT 
     month_witnessed,
     SUM(CASE WHEN has_weapon = true AND has_jacket = true AND has_hat = false THEN 1 ELSE 0 END) as probability_count,

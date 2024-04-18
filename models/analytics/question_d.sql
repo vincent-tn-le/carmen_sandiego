@@ -1,3 +1,5 @@
+{{ config(materialized="view") }}
+
 WITH count_behaviors AS (
     SELECT
         month_witnessed,

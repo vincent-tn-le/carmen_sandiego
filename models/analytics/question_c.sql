@@ -1,3 +1,5 @@
+{{ config(materialized="view") }}
+
 SELECT 
     behavior,
     count(*) AS behavior_count

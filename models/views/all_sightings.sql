@@ -1,3 +1,5 @@
+{{ config(materialized="view") }}
+
 WITH all_sightings AS (
     SELECT 'Africa' as agency_region, EXTRACT(MONTH from date_witness) as month_witnessed, * FROM dbt_vle.stg_africa 
     UNION ALL
