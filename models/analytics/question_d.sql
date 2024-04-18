@@ -3,15 +3,14 @@
 WITH count_behaviors AS (
     SELECT
         month_witnessed,
-        behavior,
+        --behavior,
         count(*) AS behavior_count
     FROM
         dbt_vle.all_sightings
     WHERE
         behavior IN ('out-of-control', 'complaining', 'happy')
     GROUP BY
-        month_witnessed,
-        behavior
+        month_witnessed
 ),
 total_counts AS (
     SELECT
@@ -25,7 +24,7 @@ total_counts AS (
 
 SELECT 
     cb.month_witnessed,
-    cb.behavior,
+    --cb.behavior,
     cb.behavior_count,
     tc.total_count,
     cb.behavior_count * 1.0 / tc.total_count AS probability
